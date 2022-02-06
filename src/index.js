@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3060;
+const port = 80;
 const route = require('./routes');
 // const fileUpload = require('express-fileupload');
 // const session = require('express-session');
