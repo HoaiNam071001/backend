@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 3060;
 const route = require('./routes');
 // const fileUpload = require('express-fileupload');
 // const session = require('express-session');
@@ -27,6 +27,6 @@ app.use(express.urlencoded({ extended: true }));
 route(app);
 
 
-app.listen(process.env.PORT || 5000, () => {
+app.listen(port || process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
 })
