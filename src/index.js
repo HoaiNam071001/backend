@@ -27,6 +27,6 @@ app.use(express.urlencoded({ extended: true }));
 route(app);
 
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log(`Example app listening on port ${port}`)
 })
